@@ -1,0 +1,37 @@
+<header class="header">
+    <div class="header__content">
+        <div class="container">
+            <div class="header__content-inner">
+                <a href="{% url 'home' %}">
+                    <img class="header__logo" src="{% static 'img/logo.svg' %}" alt="">
+                    <img class="header__logo-mobile" src="{% static 'img/logo_mobile.svg' %}" alt="">
+                </a>
+                <div class="menu">
+                    <div class="header__btn-menu-close">
+                        <span><img src="{% static 'img/menu_arrow.svg' %}" alt=""></span>
+                    </div>
+                    <div class="header__btn-menu-mobile">
+                        <span><img src="{% static 'img/hamburger.svg' %}" alt=""></span>
+                    </div>
+                    <div class="header__btn-menu">
+                        <span><img src="{% static 'img/hamburger_tablet.svg' %}" alt=""></span>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="header__link__about">О нас</div>
+                            <a class="header__link__about_mobile">О нас</a>
+                        </li>
+                        <li>
+                            <div class="header__link__events">Мероприятия</div>
+                            <a class="header__link__events_mobile">Мероприятия</a>
+                        </li>
+
+                        <li><a class="header__link" href="{% url 'rules' %}">Правила</a></li>
+                        <li><a class="header__link" href="{% url 'contacts' %}">Контакты</a></li>
+
+                    </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+</header>
