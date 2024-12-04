@@ -166,7 +166,7 @@ header {
 }
 
 .menu li {
-    padding-left: 30px;
+    margin-left: 30px;
 }
 
 header li:hover {
