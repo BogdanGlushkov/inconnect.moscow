@@ -52,7 +52,7 @@
     .footer_mobile {
         display: flex;
         flex-direction: column;
-        margin-top: 140px;
+        margin-top: 65px;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 40px;
@@ -221,23 +221,75 @@
         gap: 60px;
     }
 
+    .review_from_client {
+        max-width: none;
+    }
+
     .contacts_header {
         margin-top: var(--margin-top-mobile);
     }
 
     .contacts {
-        margin-top: var(--margin-top-mobile);
+        margin-top: 80px;
     }
 
     .contacts_row {
-        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-bottom: 0px;
     }
 
+    /*  */
 
+    .form_submit_arrow {
+        display: none;
+    }
+
+    .form_btn-for_mobile {
+        display: block;
+        padding: 10px;
+        width: 100%;
+        background-color: #131213;
+        border: none;
+        border-radius: 5px;
+        color: var(--white-color);
+        margin-top: 20px;
+    }
+
+    .contact_form form input {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .contact_form form {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .form_description {
+        width: 100%;
+        margin-top: 20px;
+        height: 26px;
+    }
+
+    textarea {
+        font-size: 16px;
+    }
+
+    .contact_form {
+        width: 100%;
+        max-width: 332px;
+    }
+
+    .form_centering {
+        width: 100%;
+    }
+
+    /*  */
     .undersection_centering {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
     }
 
     .contacts_row_margin-top {

@@ -13,6 +13,27 @@
 </head>
 
 <body>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(99127667, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/99127667" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
     <div class="background-header">
         <div class="container">
             <header>
@@ -51,13 +72,14 @@
                             </li>
                             <div class="only_4_mobile_footer">
                                 <div class="flex-container_header-footer">
-                                    <a href="#"><img src="../img/whatsup.svg" alt="WhatsUP Логотип"></a>
-                                    <a href="#"><img src="../img/telegram.svg" alt="Телеграм логотип"></a>
+                                    <a href="#" target="_blank"><img src="../img/whatsup.svg" alt="WhatsUP Логотип"></a>
+                                    <a href="https://t.me/inconnectmsk" target="_blank"><img src="../img/telegram.svg"
+                                            alt="Телеграм логотип"></a>
                                 </div>
 
                                 <h6>© 2024 INConnect</h6>
                                 <h6>Все права защищены</h6>
-                                <h6><a href="#">Политика конфиденциальности</a></h6>
+                                <h6><a href="#" target="_blank">Политика конфиденциальности</a></h6>
                             </div>
                         </div>
                     </ul>
@@ -365,8 +387,8 @@
                 <div class="review_from_client">
                     <img src="../img/stars.svg" alt="Оценка пользователя - 5/5">
                     <h5>Обратилась к Сергею с задачей «холодного» обзвона базы. В начале работы обговорили все условия.
-                        Сергей четко все объяснил и рассказал свой подход к работе, который меня полностью устроил.</h5>
-                    <h5>Понравилась чистая речь, без заминок и приятный голос.</h5>
+                        Сергей четко все объяснил и рассказал свой подход к работе, который меня полностью устроил.
+                        Понравилась чистая речь, без заминок и приятный голос.</h5>
                     <p>Марина Симакова</p>
                     <h6>Холодные продажи</h6>
                 </div>
@@ -407,13 +429,35 @@
                         </div>
                     </div>
                 </section>
+
+                <div class="contact_form">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+
+                        <!-- Replace with your Access Key -->
+                        <input type="hidden" name="access_key" value="839f9c29-aaf3-47d4-bd14-266d023ea7a3">
+                        <div class="form_centering">
+                            <!-- Form Inputs. Each input must have a name="" attribute -->
+                            <input type="email" name="Почта" placeholder="Почта" required>
+                            <input type="text" name="Номер телефона" placeholder="Номер телефона" required>
+                            <input type="text" name="Регион" placeholder="Регион" autocomplete="off">
+                        </div>
+                        <textarea name="Описание" placeholder="Описание проекта" class="form_description"
+                            autocomplete="off"></textarea>
+
+                        <!-- Honeypot Spam Protection -->
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                        <button type="submit" class="form_submit_arrow"><img src="./img/right_arrow.svg"
+                                alt="Написать нам"></button>
+                        <button class="form_btn-for_mobile" type="submit">Отправить</button>
+
+                    </form>
+                </div>
             </div>
             <!--  -->
+            <!-- <div class="undersection_centering">
 
-            <!-- Contact form -->
-            <div class="contact_form">
-                *FORM*
-            </div>
+            </div> -->
 
             <!--  -->
 
@@ -424,14 +468,17 @@
                 </div>
                 <div class="footer_right">
                     <div class="footer_right_top">
-                        <a href="#"><img src="../img/whatsup.svg" alt="WhatsUP Логотип"></a>
-                        <a href="#"><img src="../img/telegram.svg" alt="Телеграм логотип"></a>
-                        <a href="#"><img src="../img/profi.svg" alt="Профи.ру логотип"></a>
+                        <a href="https://api.whatsapp.com/send?phone=89850998755&text=%D0%90%D0%BB%D0%B5%D1%88%D0%B8%D0%BD%20%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B9%20%D0%92%D0%B8%D0%BA%D1%82%D0%BE%D1%80%D0%BE%D0%B2%D0%B8%D1%87%20-%20Hanterman"
+                            target="_blank"><img src="../img/whatsup.svg" alt="WhatsUP Логотип"></a>
+                        <a href="https://t.me/inconnectmsk" target="_blank"><img src="../img/telegram.svg"
+                                alt="Телеграм логотип"></a>
+                        <a href="https://profi.ru/profile/AleshinSV8" target="_blank"><img src="../img/profi.svg"
+                                alt="Профи.ру логотип"></a>
                     </div>
                     <div class="footer_right_down">
                         <h6><a href="#">Политика конфиденциальности</a></h6>
                         <h6>|</h6>
-                        <h6>Разработано <a href="#"><span>NONAMEYET</span></a></h6>
+                        <h6>Разработано <a href="cryonix.tech" target="_blank"><span>Cryonix</span></a></h6>
                     </div>
                 </div>
             </section>
@@ -444,14 +491,17 @@
                         <h6>|</h6>
                         <h6><a href="#">Политика конфиденциальности</a></h6>
                         <h6>|</h6>
-                        <h6>Разработано <a href="#"><span>NONAMEYET</span></a></h6>
+                        <h6>Разработано <a href="cryonix.tech" target="_blank"><span>Cryonix</span></a></h6>
                     </div>
                 </div>
                 <div class="footer_right">
                     <div class="footer_right_top">
-                        <a href="#"><img src="../img/whatsup.svg" alt="WhatsUP Логотип"></a>
-                        <a href="#"><img src="../img/telegram.svg" alt="Телеграм логотип"></a>
-                        <p class="profi_ru_logotype"><a href="#"><img src="../img/profi.svg" alt="Профи.ру логотип"></a>
+                        <a href="https://api.whatsapp.com/send?phone=89850998755&text=%D0%90%D0%BB%D0%B5%D1%88%D0%B8%D0%BD%20%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B9%20%D0%92%D0%B8%D0%BA%D1%82%D0%BE%D1%80%D0%BE%D0%B2%D0%B8%D1%87%20-%20Hanterman"
+                            target="_blank"><img src="../img/whatsup.svg" alt="WhatsUP Логотип"></a>
+                        <a href="https://t.me/inconnectmsk" target="_blank"><img src="../img/telegram.svg"
+                                alt="Телеграм логотип"></a>
+                        <p class="profi_ru_logotype"><a href="https://profi.ru/profile/AleshinSV8" target="_blank"><img
+                                    src="../img/profi.svg" alt="Профи.ру логотип"></a>
                         </p>
                     </div>
                 </div>

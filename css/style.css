@@ -550,8 +550,66 @@ h6 {
 
 /*  */
 
-.contact_form {
-    margin: 130px;
+.contact_form form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact_form form input {
+    margin-top: 27px;
+    background: transparent;
+    border-width: 0 0 1px 0;
+    opacity: 50%;
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: 300;
+    font-family: Gilroy, sans-serif;
+    fill-opacity: 1;
+    width: 100%;
+    height: 29px;
+}
+
+
+.form_btn-for_mobile {
+    display: none;
+}
+
+.form_description {
+    height: 141px;
+    margin-top: 27px;
+    width: 35.4%;
+}
+
+textarea {
+    background: transparent;
+    border-width: 0 0 1px 0;
+    opacity: 50%;
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: 300;
+    font-family: Gilroy, sans-serif;
+    resize: none;
+}
+
+.form_centering {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 35.4%;
+}
+
+.form_submit_arrow {
+    background: transparent;
+    border: none;
+    opacity: 50%;
+    transition: opacity 400ms ease;
+}
+
+.form_submit_arrow:hover {
+    opacity: 100%;
 }
 
 /*  */
