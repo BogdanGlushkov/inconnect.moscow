@@ -173,7 +173,7 @@ header li:hover {
     border-radius: 5px;
     display: flex;
     cursor: pointer;
-    transition: background-image 200ms ease;
+    transition: background-image 400ms ease;
     font-size: 16px;
     font-weight: 300;
 }
