@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INconnect</title>
+    <link rel="icon" type="image/x-icon" href="./public/favicon.ico">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="jquery-ui.min.css">
@@ -54,19 +55,23 @@
                         </div>
                         <div class="menu_centerer">
                             <li>
-                                <h6>Услуги</h6>
+                                <h6 class="header_link" id="Услуги_кнопка">Услуги</h6>
+                                <h6 class="header_link_mobile" id="Услуги_кнопка_мобильный">Услуги</h6>
                             </li>
                             <li>
-                                <h6>Кейсы</h6>
+                                <h6 class="header_link" id="Кейсы_кнопка">Кейсы</h6>
+                                <h6 class="header_link_mobile" id="Кейсы_кнопка_мобильный">Кейсы</h6>
                             </li>
                             <li>
-                                <h6>Кто мы</h6>
+                                <h6 class="header_link" id="Кто_мы_кнопка">Кто мы</h6>
+                                <h6 class="header_link_mobile" id="Кто_мы_кнопка_мобильный">Кто мы</h6>
                             </li>
                             <li>
-                                <h6>Контакты</h6>
+                                <h6 class="header_link" id="Контакты_кнопка">Контакты</h6>
+                                <h6 class="header_link_mobile" id="Контакты_кнопка_мобильный">Контакты</h6>
                             </li>
                             <li>
-                                <a class="header__btn">
+                                <a class="header__btn" id="Напишите_нам_кнопка">
                                     <p>Напишите нам</p>
                                 </a>
                             </li>
@@ -86,20 +91,23 @@
                 </div>
             </header>
 
-            <div class="centered__main_text">
+            <div class="container-header">
 
-                <h1><span>Изучение бизнеса, настройка AI, генерация лидов</span></h1>
-                <h6>Мы специализируемся на холодном обзвоне и разработке индивидуальных стратегий для эффективного
-                    привлечения новых клиентов. Мы предлагаем полный спектр услуг: от сбора базы контактов и разработки
-                    уникального скрипта с элементами AI до передачи «горячих» лидов вашему бизнесу.</h6>
-                <img src="./img/arrow.svg" alt="">
+                <div class="centered__main_text">
+
+                    <h1><span>Изучение бизнеса, настройка AI, генерация лидов</span></h1>
+                    <h6>Мы специализируемся на холодном обзвоне и разработке индивидуальных стратегий для эффективного
+                        привлечения новых клиентов. Мы предлагаем полный спектр услуг: от сбора базы контактов и
+                        разработки
+                        уникального скрипта с элементами AI до передачи «горячих» лидов вашему бизнесу.</h6>
+                    <img src="./img/arrow.svg" alt="">
+                </div>
             </div>
-
         </div>
     </div>
     <main>
         <div class="container">
-            <div class="what_we_make__header">
+            <div class="what_we_make__header" id="Услуги">
                 <h1><span>Что мы предлагаем?</span></h1>
                 <h5><span>Стоимость полного пакета составляет всего 85 000 ₽</span></h5>
             </div>
@@ -157,7 +165,7 @@
             </div>
 
 
-            <div class="our_cases__header">
+            <div class="our_cases__header" id="Кейсы">
 
                 <h1><span>Наши кейсы</span></h1>
                 <h5>Для демонстрации наших результатов и подхода к клиентскому проектированию представляем анализ
@@ -350,7 +358,7 @@
                     <!-- "Диаграмма предоставления услуг для продавца деталей на станке ЧПУ" -->
                 </div>
             </section>
-            <section class="connect_friendship">
+            <section class="connect_friendship" id="Кто_мы">
 
                 <h1><span>Connect для знакомства!</span></h1>
                 <div class="connect_friendship_blocks">
@@ -373,11 +381,12 @@
                 </div>
             </section>
             <section class="frendship_logotypes">
-                <img src="../img/logo-bks-bank 1.svg" alt="Логотип БКС банка">
-                <img src="../img/VTB_logo_2018@3x 1.svg" alt="Логотип ВТБ">
-                <img src="../img/logo-sber 1.svg" alt="Логотип Сбербанка">
-                <img src="../img/dd3912c275fb0be0153c2159506b3be9 1.svg" alt="Логотип Альфа-банка">
-                <img src="../img/alfa 1.svg" alt="Логотип Альфа-страхования">
+                <img class="frendship_logotype" src="../img/logo-bks-bank 1.svg" alt="Логотип БКС банка">
+                <img class="frendship_logotype" src="../img/VTB_logo_2018@3x 1.svg" alt="Логотип ВТБ">
+                <img class="frendship_logotype" src="../img/logo-sber 1.svg" alt="Логотип Сбербанка">
+                <img class="frendship_logotype" src="../img/dd3912c275fb0be0153c2159506b3be9 1.svg"
+                    alt="Логотип Альфа-банка">
+                <img class="frendship_logotype" src="../img/alfa 1.svg" alt="Логотип Альфа-страхования">
             </section>
             <div class="our_results_header">
                 <h2><span>Наши результаты</span></h2>
@@ -408,7 +417,7 @@
                     <h6>Обзвон по базе • Холодные продажи</h6>
                 </div>
             </section>
-            <div class="contacts_header">
+            <div class="contacts_header" id="Контакты">
                 <h1>
                     <span>Контакты</span>
                 </h1>
@@ -417,14 +426,16 @@
                 <section class="contacts">
                     <div class="contacts_row">
                         <h3><span>Телефон</span></h3>
-                        <h3 style="user-select: text;">+ 7 (985) 099 8755</h3>
+                        <h3 style="user-select: text;" class="phone_number">+ 7 (985) 099 8755</h3>
+                        <h3 style="user-select: text;" class="phone_number_mobile"><a href="tel:+79850998755">+ 7 (985)
+                                099 8755</a></h3>
                     </div>
                     <div class="contacts_row">
                         <h3><span>Почта</span></h3>
                         <h3 style="user-select: text;">Aleshin110792@gmail.com</h3>
                     </div>
                     <div class="contacts_row_margin-top">
-                        <div class="contacts_row">
+                        <div class="contacts_row" id="Напишите_нам">
                             <h3><span>Напишите нам</span></h3>
                         </div>
                     </div>
@@ -464,7 +475,7 @@
             <section class="footer">
                 <div class="footer_left">
                     <h1>GET <span>CONNECTED</span></h1>
-                    <h6>© 2024 INConnect. Все права защищены.</h6>
+                    <h6>© 2024 INConnect. Все права защищены</h6>
                 </div>
                 <div class="footer_right">
                     <div class="footer_right_top">
@@ -517,7 +528,6 @@
 
     <!--  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="./js/slick/slick.min.js"></script>
     <script src="./js/jquery-ui/jquery-ui.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
